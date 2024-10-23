@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bungee+Outline&family=Exo:ital@0;1&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Agdasima', 'sans-serif';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ececdd;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 250px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.096);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+}
+
+.card h2 {
+    font-size: 25px;
+    color: #302314;
+}
+.card p{
+    font-size: 20px;
+    color: #302314;
+}
+
+.points {
+    font-size: 20px;
+    color: #302314;
+}
+
+.previous{
+    align-items: center;
+    background-color: #302314;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+    width: 40px;
+    height: 40px;
+}
+.next {
+    align-items: center;
+    background-color: #302314;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+    width: 40px;
+    height: 40px;
+}
+
+.voltar:hover, .avancar:hover {
+    background-color: #27282c;
+}

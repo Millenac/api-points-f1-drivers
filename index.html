@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilots F1</title>
+    <link rel="stylesheet" href="./src/style/style.css">
+</head>
+<body>
+    <main>
+
+        <div id="card-container">
+            <button class="previous" onclick="previousPilots()"><</button>
+            <div class="card" id="pilot-1">
+                <img id="image-1" src="./src/image/default.png" alt="piloto-1">
+                <h2 id="name-1">Nome do Piloto 1</h2>
+                <p class="points">Points: <span id="points-1">0</span></p>
+                <p class="team">Team: <span id="team-1">Equipe 1</span></p>
+                <p class="grid">Grid position: <span id="position-1">0</span></p>
+            </div>
+            <div class="card" id="pilot-2">
+                <img id="image-2" src="./src/image/default.png" alt="piloto-2">
+                <h2 id="name-2">Nome do Piloto 2</h2>
+                <p class="points">Points: <span id="points-2">0</span></p>
+                <p class="team">Team: <span id="team-2">Equipe 2</span></p>
+                <p class="grid">Grid position: <span id="position-2">0</span></p>
+            </div>
+            <button class="next" onclick="nextPilots()">></button>
+        </div>
+    </main>
+    <script src="./src/script/script.js"></script>
+</body>
+</html>
