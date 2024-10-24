@@ -1,0 +1,27 @@
+@media (max-width: 720px) and (min-width: 350px) {
+    body {
+        font-size: 50%;
+    }
+    .team-name {
+        font-size: 85px;
+    }
+    .card {
+        width: 150px;
+        padding: 15px;
+    }
+    .card p {
+        font-size: 16px;
+    }
+    .card img {
+        border-radius: 100px;
+        width: 75px;
+        height: 75px;
+    }
+    .card h2 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    button.previous, button.next {
+        padding: 8%;
+    }
+}

@@ -19,6 +19,7 @@ async function getPilotPoints() {
 
         // Transforma o objeto em um vetor de equipes
         const teamArray = Object.values(teams);
+        totalTeams = teamArray.length;
 
         // Atualiza os cards com os pilotos
         if (indexTeam < teamArray.length) {
@@ -60,25 +61,4 @@ function previousPilots() {
     getPilotPoints();
 }
 
-async function initialize() {
-    const response = await fetch('https://ergast.com/api/f1/current/driverStandings.json');
-    const data = await response.json();
-    const drivers = data.MRData.StandingsTable.StandingsLists[0].DriverStandings;
-
-    // Agrupa pilotos por equipe
-    const teams = {};
-    for (const driver of drivers) {
-        const teamName = driver.Constructors[0].name;
-        if (!teams[teamName]) {
-            teams[teamName] = [];
-        }
-        teams[teamName].push(driver);
-    }
-
-    // Transforma o objeto em um vetor de equipes
-    const teamArray = Object.values(teams);
-    totalTeams = teamArray.length; // Define o número total de equipes
-    getPilotPoints();
-}
-
-initialize();
+getPilotPoints();
